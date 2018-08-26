@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 公共样式 -->
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/animate.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <link href="../../css/bootstrapValidator.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/index.css">
+  <!-- 当前页面专用样式 -->
+  <link rel="stylesheet" href="../../css/conn/withDrawAdmin.css">
+  <title>申请提现管理</title>
+</head>
+
+<body style="background-color: #f3f3f4;">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>申请提现管理</h2>
+      <input type="hidden" id="status" value="0">
+    </div>
+  </div>
+  <div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-content m-b-sm border-bottom">
+              <div class="row">
+                  <div class=" col-sm-12 ">
+                      <div class="input-group">
+                          <input type="text" name="mobile" placeholder="手机号码" class="input-sm form-control mobile">
+                          <input type="text" name="code" placeholder="提现账户" class="input-sm form-control code">
+                          <span class="input-group-btn">
+                              <button type="button" class="btn btn-sm btn-primary"> 查询</button>
+                          </span>
+                      </div>
+                      
+                  </div>
+    
+                </div>
+           
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="ibox">
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        
+                      </thead>
+                      <tbody id = "records">
+
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation" style="float: right;">
+                      <ul class="pagination ">
+
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						请输入操作密码
+					</h4>
+				</div>
+				<div class="modal-body">
+					<input type="text" id = "pwd" class="per-form-control">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+					<button type="button" id="submit_btn" class="btn btn-primary">
+						确认提现
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal -->
+	</div>
+
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/bootstrap-table.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+  <script src="../../js/index.js?"></script>
+  <script src="../../js/conn/withDrawAdmin.js?2=2"></script>
+</body>
+
+</html>
